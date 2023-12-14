@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Grease Coding System</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="parameters">
+      <form id="logoForm">
+        <label for="param1">Molson Coors Grease Number:</label>
+        <input type="number" id="param1" name="param1">
+        
+        <br><br>
+        
+        <label for="param2">Food Grade:</label>
+        <select id="param2">
+          <option value="" selected disabled hidden>Odaberi opciju</option>
+          <option value="H1">H1</option>
+          <option value="NR">Not Rated</option>
+        </select>
+        <br><br>
+        
+        <label for="param3">Grease Base Oil Type:</label>
+        <select id="param3">
+          <option value="" selected disabled hidden>Odaberi opciju</option>
+          <option value="MO">Mineral Oil</option>
+          <option value="PFPE">PFPE</option>
+          <option value="SHC">Synthetic HC and PAO</option>
+          <option value="SI">Silicon Oil</option>
+          <option value="SPO">Synthetic PAG Oil</option>
+          <option value="WO">White Oil</option>
+        </select>
+        
+        <br><br>
+        
+        <label for="param4">Grease Thickener:</label>
+        <select id="param4">
+          <option value="" selected disabled hidden>Odaberi opciju</option>
+          <option value="FGG">Food Grade</option>
+          <option value="AXG">Aluminum Complex</option>
+          <option value="CAG">Calcium Thickner</option>
+          <option value="CXG">Calcium Complex</option>
+          <option value="CSG">Calcium Sulphonate</option>
+          <option value="LIG">Lithium Tickner</option>
+          <option value="CLG">Clay Tickner</option>
+          <option value="PUG">Polyurea Tickner</option>
+          <option value="LCG">Lithium Calcium</option>
+          <option value="BXG">Barium Complex</option>
+          <option value="PTFEG">PTFE</option>
+          <option value="CSXG">Calcium Sulphonate Complex</option>
+
+        </select>
+
+        <br><br>
+        
+        <label for="param5">Grease:</label>
+        <select id="param5">
+          <option value="" selected disabled hidden>Odaberi opciju</option>
+          <option value="00">Triangle</option>
+          <option value="0">Hexagon</option>
+          <option value="1">Shield</option>
+          <option value="2">Rectangle</option>
+          <option value="3">Sunburst</option>
+          <option value="4">Diagonal</option>
+          <option value="5">Oval</option>
+        </select>
+
+        <br><br> <br><br>
+        
+      </form>
+    </div>
+
+    <div class="logoContainer">
+      <div class="upperHalf">
+        <div class="sign"></div>
+        <div id="propertiesText"></div>
+      </div>
+    </div>
+    <button id="Download" onclick="downloadLogo()">Download</button>
+  </div>
+
+</body>
+</html>
